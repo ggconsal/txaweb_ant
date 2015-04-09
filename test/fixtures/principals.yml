@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  con_fecha: 2015-03-26 08:50:48
+  con_nombre: MyString
+  tema_id: 
+  canalingreso_id: 
+  con_mail: MyString
+  mov_obs: MyText
+  con_telefono: MyString
+  con_mail_sn: false
+  con_telefono_sn: false
+
+two:
+  con_fecha: 2015-03-26 08:50:48
+  con_nombre: MyString
+  tema_id: 
+  canalingreso_id: 
+  con_mail: MyString
+  mov_obs: MyText
+  con_telefono: MyString
+  con_mail_sn: false
+  con_telefono_sn: false

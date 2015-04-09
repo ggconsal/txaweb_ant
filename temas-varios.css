@@ -1,0 +1,49 @@
+/*
+
+1) Regular el "border-radius" de los items del menu.
+2) Mejorar el logo de Texha.
+3) Ver la posibilidad de agregar la palabra "MENU" a la izquierda del menu reducido.
+4) Analizar la posibilidad de utilizar imagenes con distintos tamaños.
+
+*/
+
+
+
+/*
+
+           Prefix Verb   URI Pattern                       Controller#Action
+       principals GET    /principals(.:format)             principals#index
+                  POST   /principals(.:format)             principals#create
+    new_principal GET    /principals/new(.:format)         principals#new
+   edit_principal GET    /principals/:id/edit(.:format)    principals#edit
+        principal GET    /principals/:id(.:format)         principals#show
+                  PATCH  /principals/:id(.:format)         principals#update
+                  PUT    /principals/:id(.:format)         principals#update
+                  DELETE /principals/:id(.:format)         principals#destroy
+    canalingresos GET    /canalingresos(.:format)          canalingresos#index
+                  POST   /canalingresos(.:format)          canalingresos#create
+ new_canalingreso GET    /canalingresos/new(.:format)      canalingresos#new
+edit_canalingreso GET    /canalingresos/:id/edit(.:format) canalingresos#edit
+     canalingreso GET    /canalingresos/:id(.:format)      canalingresos#show
+                  PATCH  /canalingresos/:id(.:format)      canalingresos#update
+                  PUT    /canalingresos/:id(.:format)      canalingresos#update
+                  DELETE /canalingresos/:id(.:format)      canalingresos#destroy
+            temas GET    /temas(.:format)                  temas#index
+                  POST   /temas(.:format)                  temas#create
+         new_tema GET    /temas/new(.:format)              temas#new
+        edit_tema GET    /temas/:id/edit(.:format)         temas#edit
+             tema GET    /temas/:id(.:format)              temas#show
+                  PATCH  /temas/:id(.:format)              temas#update
+                  PUT    /temas/:id(.:format)              temas#update
+                  DELETE /temas/:id(.:format)              temas#destroy
+            areas GET    /areas(.:format)                  areas#index
+                  POST   /areas(.:format)                  areas#create
+         new_area GET    /areas/new(.:format)              areas#new
+        edit_area GET    /areas/:id/edit(.:format)         areas#edit
+             area GET    /areas/:id(.:format)              areas#show
+                  PATCH  /areas/:id(.:format)              areas#update
+                  PUT    /areas/:id(.:format)              areas#update
+                  DELETE /areas/:id(.:format)              areas#destroy
+             root GET    /                                 principals#index
+
+*/

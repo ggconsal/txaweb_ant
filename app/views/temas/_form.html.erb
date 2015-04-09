@@ -1,0 +1,29 @@
+<%= form_for(@tema) do |f| %>
+  <% if @tema.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tema.errors.count, "error") %> prohibited this tema from being saved:</h2>
+
+      <ul>
+      <% @tema.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tem_titulo %><br>
+    <%= f.text_field :tem_titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :tem_desc %><br>
+    <%= f.text_area :tem_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :area_id %><br>
+    <%= f.text_field :area_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

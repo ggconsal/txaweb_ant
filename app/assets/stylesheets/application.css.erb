@@ -1,0 +1,346 @@
+ /*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap
+ *= require_self
+ *= require mediaq-land-height
+ */
+
+body, html, .div-ppal {
+	height: 100%;
+}
+.navbar {
+	background-color: #fff;
+	opacity: .5;
+	top: 3%;
+	border-radius: 15%;
+	border-color: #bbb;
+	border-bottom-width: 3px;
+	border-right-width: 3px;
+}
+
+.div-img {
+	height: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.navbar-brand {
+	padding: 0px;
+	padding-top: 5px;
+}
+
+.navbar-nav li a {
+	padding-right: 5px;
+	padding-left: 10px;
+}
+
+.marca {
+	position: absolute;
+	top: 0%;
+	left: 2%;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #777;
+	border-radius: 65%;
+	font-weight: bold;
+}
+
+.img-ppal {
+	margin: 0px;
+	width: 100%;
+	left: 0px;
+	height: 100%;
+}
+
+.carousel, .carousel-inner, .item  {
+	height: 100%;
+}
+
+.carousel-ppal {
+	position: absolute;
+	bottom: 35%;
+	height: 50%;
+	overflow: hidden;
+}
+
+.carousel-caption {
+	position: static;
+	background-color: transparent;
+	color: #07145C;
+	border-radius: 20%;
+}
+
+.carousel-caption h3 {
+    font-size: 2.5em;
+	color: #8BD6FF;
+}
+
+.carousel-caption h3 span {
+    font-size: 1.4em;
+	color: white;
+    text-shadow: 6px -4px 8px white;
+}
+
+.carousel-caption p {
+    font-size: 1.4em;
+	color: #8BD6FF;
+	margin-bottom: 3%;
+}
+
+.carousel-control {
+	color: #fff;
+    font-size: 2em;
+    width: 25%;
+}
+
+.carousel-control.right {
+	right: 0%;
+    background-image: none;
+}
+
+.carousel-control.left {
+	left: 0%;
+    background-image: none;
+}
+
+.carousel-control:hover /*,
+.carousel-control:focus */ {
+    text-shadow: 6px 0px 2px #FF0, -6px 0px 2px #FFFF33;
+	color: #fff;
+ 	text-decoration: none;
+ 	opacity: .9;
+ }
+ 
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right, .carousel-control .glyphicon-hand-right  {
+	position: absolute;
+    top: 40%;
+    right: 20%;
+}
+.carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-hand-left  {
+	position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+.btn-idx {
+	padding: 0.4em 1.2em;
+	width: 40%;
+	position: absolute;
+	left: 33%;
+	bottom: 10;
+}
+
+.btn-font1 {
+	font-weight: bold;
+    font-size: 1.3em;
+	color: #000;
+	background-color: #81CB6A;
+	opacity: .8;
+	text-align: center;
+	border-radius: 5%;
+}
+
+.btn-idx:hover,
+.btn-idx:focus {
+	text-decoration: none;
+	background-color: transparent;
+	border-color: #81CB6A;
+	border-width: 1px;
+	color: #fff;
+}
+
+.carousel-indicators li {
+	background-color: rgba(0, 0, 0, 0);
+	border: 2px solid #bbb;
+	border-radius: 80% 25%;
+	width: 20px;
+}
+.carousel-indicators .active {
+  background-color: #bbb;
+  width: 20px;
+}
+
+.carousel-indicators {
+	bottom: 5%;
+}
+
+
+/*
+--------------------------------------------------------------------
+---- MEDIA QUERIES 
+----
+----    >>> LANDSCAPE
+----    >>> FONT-SIZE del BODY
+----    >>> LEFT y WIDTH del CAROUSEL
+--------------------------------------------------------------------
+*/
+
+@media (min-width: 5px) and (orientation:landscape) {
+	body{
+		font-size: 3px;
+	}
+
+	.carousel-ppal {
+		left: 35%;
+		width: 65%;
+	}
+}
+
+@media (min-width: 230px) and (orientation:landscape) {
+	body{
+		font-size: 4px;
+	}
+}
+
+@media (min-width: 270px) and (orientation:landscape) {
+	body{
+		font-size: 5px;
+	}
+}
+
+@media (min-width: 300px) and (orientation:landscape) {
+	body{
+		font-size: 4px;
+	}
+
+	.carousel-ppal {
+		left: 39%;
+		width: 61%;
+	}
+}
+
+@media (min-width: 360px) and (orientation:landscape) {
+	body{
+		font-size: 5px;
+	}
+}
+
+@media (min-width: 400px) and (orientation:landscape) {
+	body{
+		font-size: 6px;
+	}
+}
+
+@media (min-width: 470px) and (orientation:landscape) {
+	body{
+		font-size: 7px;
+	}
+}
+
+@media (min-width: 500px) and (orientation:landscape) {
+	body{
+		font-size: 7.7px;
+	}
+}
+
+@media (min-width: 550px) and (orientation:landscape) {
+	body{
+		font-size: 8.5px;
+	}
+}
+
+@media (min-width: 600px) and (orientation:landscape) {
+	body{
+		font-size: 9.5px;
+	}
+}
+
+@media (min-width: 700px) and (orientation:landscape) {
+	body{
+		font-size: 11.5px;
+	}
+}
+
+@media (min-width: 768px) and (orientation:landscape) {
+	body{
+		font-size: 13px;
+	}
+}
+
+@media (min-width: 850px) and (orientation:landscape) {
+	body{
+		font-size: 13.5px;
+	}
+}
+
+@media (min-width: 900px) and (orientation:landscape) {
+	body{
+		font-size: 14.5px;
+	}
+}
+
+@media (min-width: 1050px) and (orientation:landscape) {
+	body{
+		font-size: 17px;
+	}
+}
+
+@media (min-width: 1200px) and (orientation:landscape) {
+	body{
+		font-size: 19.5px;
+	}
+}
+	
+@media (min-width: 1700px) and (orientation:landscape) {
+	body{
+		font-size: 21px;
+	}
+	
+	.carousel-ppal {
+		left: 45%;
+		width: 50%;
+	}
+}
+
+/*
+--------------------------------------------------------------------
+---- MEDIA QUERIES
+----
+----    >>> LANDSCAPE
+----    >>> MARGIN de la IMG-PPAL
+----    >>> MARGIN y WIDTH del BUTTON del MENU
+----    >>> MARGIN y WIDTH de la IMG-BRAND
+--------------------------------------------------------------------
+*/
+
+@media (min-width: 5px) and (orientation:landscape) {
+	.img-ppal {
+		margin-top: 0%;
+	}
+}
+
+@media (min-width: 220px) and (orientation:landscape) {
+}
+
+@media (min-width: 260px) and (orientation:landscape) {
+}
+
+@media (min-width: 300px) and (orientation:landscape) {
+}
+
+@media (min-width: 350px) and (orientation:landscape) {
+}
+
+@media (min-width: 400px) and (orientation:landscape) {
+}
+
+@media (min-width: 500px) and (orientation:landscape) {
+}
+
+@media (min-width: 600px) and (orientation:landscape) {
+}
+
+@media (min-width: 700px) and (orientation:landscape) {
+}
+

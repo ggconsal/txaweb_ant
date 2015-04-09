@@ -1,0 +1,53 @@
+<%= form_for(@principal) do |f| %>
+  <% if @principal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@principal.errors.count, "error") %> prohibited this principal from being saved:</h2>
+
+      <ul>
+      <% @principal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :con_fecha %><br>
+    <%= f.datetime_select :con_fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :con_nombre %><br>
+    <%= f.text_field :con_nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :tema_id %><br>
+    <%= f.text_field :tema_id %>
+  </div>
+  <div class="field">
+    <%= f.label :canalingreso_id %><br>
+    <%= f.text_field :canalingreso_id %>
+  </div>
+  <div class="field">
+    <%= f.label :con_mail %><br>
+    <%= f.text_field :con_mail %>
+  </div>
+  <div class="field">
+    <%= f.label :mov_obs %><br>
+    <%= f.text_area :mov_obs %>
+  </div>
+  <div class="field">
+    <%= f.label :con_telefono %><br>
+    <%= f.text_field :con_telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :con_mail_sn %><br>
+    <%= f.check_box :con_mail_sn %>
+  </div>
+  <div class="field">
+    <%= f.label :con_telefono_sn %><br>
+    <%= f.check_box :con_telefono_sn %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

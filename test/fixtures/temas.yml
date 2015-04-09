@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tem_titulo: MyString
+  tem_desc: MyText
+  area_id: 
+
+two:
+  tem_titulo: MyString
+  tem_desc: MyText
+  area_id: 
