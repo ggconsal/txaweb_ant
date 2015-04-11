@@ -176,6 +176,161 @@ body, html, .div-ppal {
 }
 
 
+
+/*
+--------------------------------------------------------------------
+---- MEDIA QUERIES 
+----
+----    >>> PORTRAIT
+----    >>> HEIGHT de la IMAGEN PPAL
+----    >>> BOTTOM y HEIGHT del CAROUSEL
+--------------------------------------------------------------------
+*/
+
+@media (orientation:portrait) {
+	.img-ppal {
+		height: 50%;
+	}
+
+	.img-ppal2 {
+		height: 50%;
+		opacity: .89;
+		width: 100%;
+	    -ms-transform: rotate(180deg); /* IE 9 */
+	    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+	    transform: rotate(180deg);		
+	}
+
+	.carousel-caption p {
+		margin-top: 5%;
+	}
+
+	.btn-idx {
+		margin-top: 5%;
+	}
+
+	.navbar {
+	    font-size: 0.7em;
+	}
+
+}
+
+/*
+--------------------------------------------------------------------
+---- MEDIA QUERIES 
+----
+----    >>> PORTRAIT
+----    >>> FONT-SIZE del BODY
+----    >>> MARGIN-TOP del CAPPTION
+--------------------------------------------------------------------
+*/
+
+@media (min-height: 400px) and (orientation:portrait) {
+	.carousel-ppal {
+		bottom: 9%;
+		height: 54%;
+	}
+}
+
+@media (min-height: 500px) and (orientation:portrait) {
+	.carousel-ppal {
+		bottom: 10%;
+		height: 50%;
+	}
+}
+
+@media (min-height: 600px) and (orientation:portrait) {
+	.carousel-ppal {
+		bottom: 10%;
+		height: 50%;
+	}
+}
+
+@media (min-height: 700px) and (orientation:portrait) {
+	.carousel-ppal {
+		bottom: 18%;
+		height: 41%;
+	}
+}
+
+@media (min-height: 850px) and (orientation:portrait) {
+	.carousel-ppal {
+		bottom: 11%;
+		height: 47%;
+	}
+}
+
+/*
+--------------------------------------------------------------------
+---- MEDIA QUERIES 
+----
+----    >>> PORTRAIT
+----    >>> FONT-SIZE del BODY
+----    >>> MARGIN-TOP del CAPPTION
+--------------------------------------------------------------------
+*/
+
+@media (min-width: 5px) and (orientation:portrait) {
+	body{
+		font-size: 4px;
+	}
+}
+
+@media (min-width: 200px) and (orientation:portrait) {
+	body{
+		font-size: 6px;
+	}
+}
+
+@media (min-width: 300px) and (orientation:portrait) {
+	body{
+		font-size: 9px;
+	}
+}
+
+@media (min-width: 350px) and (orientation:portrait) {
+	body{
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 400px) and (orientation:portrait) {
+	body{
+		font-size: 11px;
+	}
+}
+
+@media (min-width: 500px) and (orientation:portrait) {
+	body{
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 600px) and (orientation:portrait) {
+	body{
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 700px) and (orientation:portrait) {
+	body{
+		font-size: 19px;
+	}
+}
+
+@media (min-width: 800px) and (orientation:portrait) {
+	body{
+		font-size: 22px;
+	}
+}
+
+@media (min-width: 900px) and (orientation:portrait) {
+	body{
+		font-size: 26px;
+	}
+}
+
+
 /*
 --------------------------------------------------------------------
 ---- MEDIA QUERIES 
@@ -195,6 +350,11 @@ body, html, .div-ppal {
 		left: 35%;
 		width: 65%;
 	}
+
+	.navbar {
+	    font-size: 0.9em;
+	}
+
 }
 
 @media (min-width: 230px) and (orientation:landscape) {
