@@ -18,24 +18,27 @@
 body, html, .div-ppal {
 	height: 100%;
 }
+
+/*
+--------------------------------------------------------------------
+---- MENU PRINCIPAL
+--------------------------------------------------------------------
+*/
+
 .navbar {
 	background-color: #fff;
-	opacity: .5;
+	opacity: .8;
 	top: 3%;
+	margin-left: 20%;
 	border-radius: 15%;
 	border-color: #bbb;
 	border-bottom-width: 3px;
 	border-right-width: 3px;
 }
 
-.div-img {
-	height: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
-}
 .navbar-brand {
 	padding: 0px;
-	padding-top: 5px;
+	padding-top: 5%;
 }
 
 .navbar-nav li a {
@@ -56,12 +59,30 @@ body, html, .div-ppal {
 	font-weight: bold;
 }
 
+/*
+--------------------------------------------------------------------
+---- HOME IMAGEN DE FONDO
+--------------------------------------------------------------------
+*/
+
+.div-img {
+	height: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .img-ppal {
 	margin: 0px;
 	width: 100%;
 	left: 0px;
 	height: 100%;
 }
+
+/*
+--------------------------------------------------------------------
+---- HOME CAROUSEL
+--------------------------------------------------------------------
+*/
 
 .carousel, .carousel-inner, .item  {
 	height: 100%;
@@ -74,6 +95,12 @@ body, html, .div-ppal {
 	overflow: hidden;
 }
 
+/*
+--------------------------------------------------------------------
+---- HOME CAROUSEL CAPTION
+--------------------------------------------------------------------
+*/
+
 .carousel-caption {
 	position: static;
 	background-color: transparent;
@@ -83,13 +110,13 @@ body, html, .div-ppal {
 
 .carousel-caption h3 {
     font-size: 2.5em;
-	color: #8BD6FF;
+	color: #0A79B6;
 }
 
 .carousel-caption h3 span {
     font-size: 1.4em;
-	color: white;
-    text-shadow: 6px -4px 8px white;
+	color: #086496; /* 0A79B6; FFB826; */
+	text-shadow: 6px -4px 6px #ddd;
 }
 
 .carousel-caption p {
@@ -98,10 +125,47 @@ body, html, .div-ppal {
 	margin-bottom: 3%;
 }
 
+.btn-idx {
+	padding: 0.4em 1.2em;
+	width: 50%;
+	position: absolute;
+	left: 25%;
+	bottom: 20%;
+}
+
+.btn-font1 {
+	font-weight: bold;
+    font-size: 1.3em;
+	color: #333;
+	background-color: #E7B54E;
+	text-align: center;
+	border-radius: 15%;
+}
+
+.btn-idx:hover {
+	text-decoration: none;
+	background-color: transparent;
+	border-color: #81CB6A;
+	border-width: 1px;
+	color: #fff;
+}
+
+.btn-idx:focus {
+	text-decoration: none;
+	color: #000;
+}
+
+/*
+--------------------------------------------------------------------
+---- HOME CAROUSEL CONTROL
+--------------------------------------------------------------------
+*/
+
 .carousel-control {
 	color: #fff;
     font-size: 2em;
     width: 25%;
+    z-index: 30;
 }
 
 .carousel-control.right {
@@ -133,32 +197,11 @@ body, html, .div-ppal {
     left: 30%;
 }
 
-.btn-idx {
-	padding: 0.4em 1.2em;
-	width: 40%;
-	position: absolute;
-	left: 33%;
-	bottom: 10;
-}
-
-.btn-font1 {
-	font-weight: bold;
-    font-size: 1.3em;
-	color: #000;
-	background-color: #81CB6A;
-	opacity: .8;
-	text-align: center;
-	border-radius: 5%;
-}
-
-.btn-idx:hover,
-.btn-idx:focus {
-	text-decoration: none;
-	background-color: transparent;
-	border-color: #81CB6A;
-	border-width: 1px;
-	color: #fff;
-}
+/*
+--------------------------------------------------------------------
+---- HOME CAROUSEL INDICATORS
+--------------------------------------------------------------------
+*/
 
 .carousel-indicators li {
 	background-color: rgba(0, 0, 0, 0);
@@ -167,13 +210,157 @@ body, html, .div-ppal {
 	width: 20px;
 }
 .carousel-indicators .active {
-  background-color: #bbb;
-  width: 20px;
+	background-color: #bbb;
+	width: 20px;
 }
 
 .carousel-indicators {
 	bottom: 5%;
 }
+
+/*
+--------------------------------------------------------------------
+---- VENTAS CAROUSEL
+--------------------------------------------------------------------
+*/
+
+.carousel-ppal2 {
+	position: absolute;
+	margin: 0px;
+	overflow: hidden;
+	left: 15%;
+	right: 15%;
+	border-radius: 20% 0%;
+}
+
+/*
+--------------------------------------------------------------------
+---- VENTAS CAROUSEL IMAGENES
+--------------------------------------------------------------------
+*/
+
+.img_vta1 {
+	margin: 0px auto;
+	margin-top: 2%;
+	width: 95%;
+}
+
+.img_vta2 {
+	margin: 0px auto;
+	margin-top: 2%;
+	width: 90%;
+}
+
+.img_vta3 {
+	margin: 0px auto;
+	margin-top: 2%;
+	width: 99%;
+}
+
+/*
+--------------------------------------------------------------------
+---- VENTAS CAROUSEL CAPTION
+--------------------------------------------------------------------
+*/
+
+.carousel-caption2 {
+	position: absolute;
+	background-color: #ddd;
+	right: 0;
+	left: 0;
+	bottom: 0%;
+	opacity: .6;
+	height: 48%;
+	color: #555;
+	margin-top: 0;
+	padding: 0;
+	text-align: center;
+	z-index: 1;
+}
+
+.carousel-caption2 h3 {
+    font-size: 3em;
+    text-shadow: 6px -4px 4px #FFFF33;
+    z-index: -1;
+    padding-top: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+	margin-top: 15px;
+	color: #333;
+}
+
+.carousel-caption2 p {
+    font-size: 1.8em;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.btn-idx2 {
+	padding: 0.4em 1.2em;
+	width: 50%;
+	position: absolute;
+	left: 25%;
+	bottom: 12%;
+	z-index: 10;
+}
+
+.btn-idx2:hover {
+	text-decoration: none;
+	background-color: transparent;
+	border-color: #81CB6A;
+	border-width: 1px;
+}
+
+.btn-idx2:focus {
+	text-decoration: none;
+	color: #000;
+}
+
+/*
+--------------------------------------------------------------------
+---- VENTAS CAROUSEL CONTROL
+--------------------------------------------------------------------
+*/
+
+.caro-cont2 {
+	color: #000;
+	top: 26%;
+}
+
+.caro-cont2:hover /*,
+.carousel-control:focus */ {
+	color: #777;
+ }
+ 
+
+
+/*
+--------------------------------------------------------------------
+---- COSTOS CAROUSEL IMAGENES
+--------------------------------------------------------------------
+*/
+
+.img_vta4 {
+	margin: 0px auto;
+	margin-top: 2%;
+	width: 99%;
+}
+
+.img_vta5 {
+	margin: 0px auto;
+	margin-top: 2%;
+	width: 95%;
+}
+
+.img_vta6 {
+	margin: 0px auto;
+	margin-top: 2%;
+	width: 99%;
+}
+
+
+
+
 
 
 
@@ -181,9 +368,9 @@ body, html, .div-ppal {
 --------------------------------------------------------------------
 ---- MEDIA QUERIES 
 ----
-----    >>> PORTRAIT
-----    >>> HEIGHT de la IMAGEN PPAL
-----    >>> BOTTOM y HEIGHT del CAROUSEL
+----    >>> PORTRAIT GENERAL <<<
+----
+----
 --------------------------------------------------------------------
 */
 
@@ -193,6 +380,7 @@ body, html, .div-ppal {
 	}
 
 	.img-ppal2 {
+		visibility: visible;
 		height: 50%;
 		opacity: .89;
 		width: 100%;
@@ -219,9 +407,9 @@ body, html, .div-ppal {
 --------------------------------------------------------------------
 ---- MEDIA QUERIES 
 ----
-----    >>> PORTRAIT
-----    >>> FONT-SIZE del BODY
-----    >>> MARGIN-TOP del CAPPTION
+----    >>> PORTRAIT y HEIGHT <<<
+----
+----    CAROUSEL (BOTTOM y HEIGHT)
 --------------------------------------------------------------------
 */
 
@@ -264,9 +452,9 @@ body, html, .div-ppal {
 --------------------------------------------------------------------
 ---- MEDIA QUERIES 
 ----
-----    >>> PORTRAIT
-----    >>> FONT-SIZE del BODY
-----    >>> MARGIN-TOP del CAPPTION
+----    >>> PORTRAIT y WIDTH <<<
+----
+----    BODY (FONT-SIZE)
 --------------------------------------------------------------------
 */
 
@@ -335,9 +523,10 @@ body, html, .div-ppal {
 --------------------------------------------------------------------
 ---- MEDIA QUERIES 
 ----
-----    >>> LANDSCAPE
-----    >>> FONT-SIZE del BODY
-----    >>> LEFT y WIDTH del CAROUSEL
+----    >>> LANDSCAPE y WIDTH <<<
+----
+----    BODY (FONT-SIZE)
+----    CAROUSEL (LEFT y WIDTH)
 --------------------------------------------------------------------
 */
 
@@ -467,10 +656,11 @@ body, html, .div-ppal {
 --------------------------------------------------------------------
 ---- MEDIA QUERIES
 ----
-----    >>> LANDSCAPE
-----    >>> MARGIN de la IMG-PPAL
-----    >>> MARGIN y WIDTH del BUTTON del MENU
-----    >>> MARGIN y WIDTH de la IMG-BRAND
+----    >>> LANDSCAPE <<<
+----
+----    IMG-PPAL (MARGIN)
+----    BUTTON del MENU (MARGIN y WIDTH)
+----    IMG-BRAND (MARGIN y WIDTH)
 --------------------------------------------------------------------
 */
 
@@ -478,6 +668,11 @@ body, html, .div-ppal {
 	.img-ppal {
 		margin-top: 0%;
 	}
+
+	.img-ppal2 {
+		visibility: hidden;
+	}
+
 }
 
 @media (min-width: 220px) and (orientation:landscape) {

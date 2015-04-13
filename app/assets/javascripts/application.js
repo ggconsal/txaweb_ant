@@ -15,11 +15,59 @@
 //= require turbolinks
 //= require_tree .
 
-// Load this when the DOM is ready
-//$(function(){
+//Load this when the DOM is ready
+$(function(){
   // You used .myCarousel here. 
   // That's the class selector not the id selector,
   // which is #myCarousel
-//  $('#myCarousel').carousel();
-//});
+	//$('#myCarousel').carousel();
+
+	$(function(){
+
+    	$('#vermas1').click(function() {
+
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+			 && location.hostname == this.hostname) {
+
+			    var $target = $(this.hash);
+
+			    $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+			    if ($target.length) {
+
+			        var targetOffset = $target.offset().top;
+
+			        $('html,body').animate({scrollTop: targetOffset}, 2000);
+
+			        return false;
+			    }
+			}
+
+   		});
+	});
+
+	$(function(){
+
+    	$('#vermas2').click(function() {
+
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+			 && location.hostname == this.hostname) {
+
+			    var $target = $(this.hash);
+
+			    $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+			    if ($target.length) {
+
+			        var targetOffset = $target.offset().top;
+
+			        $('html,body').animate({scrollTop: targetOffset}, 2000);
+
+			        return false;
+			    }
+			}
+
+   		});
+	});
+});
 
