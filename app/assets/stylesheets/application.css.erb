@@ -12,7 +12,10 @@
  *
  *= require bootstrap
  *= require_self
+ *= require mediaq-land-width
  *= require mediaq-land-height
+ *= require mediaq-port-width
+ *= require mediaq-port-height
  */
 
 body, html, .div-ppal {
@@ -38,7 +41,7 @@ body, html, .div-ppal {
 
 .navbar-brand {
 	padding: 0px;
-	padding-top: 5%;
+	padding-top: 1%;
 }
 
 .navbar-nav li a {
@@ -59,9 +62,20 @@ body, html, .div-ppal {
 	font-weight: bold;
 }
 
-/*
+.redes-soc {
+	position: absolute;
+	z-index: 200;
+}
+
+.affix {
+	width: 6%;
+	max-width: 50px;
+	min-width: 35px;
+}
+
+/* HOME
 --------------------------------------------------------------------
----- HOME IMAGEN DE FONDO
+---- IMAGEN DE FONDO
 --------------------------------------------------------------------
 */
 
@@ -75,12 +89,11 @@ body, html, .div-ppal {
 	margin: 0px;
 	width: 100%;
 	left: 0px;
-	height: 100%;
 }
 
-/*
+/* HOME
 --------------------------------------------------------------------
----- HOME CAROUSEL
+---- CAROUSEL
 --------------------------------------------------------------------
 */
 
@@ -90,14 +103,12 @@ body, html, .div-ppal {
 
 .carousel-ppal {
 	position: absolute;
-	bottom: 35%;
-	height: 50%;
 	overflow: hidden;
 }
 
-/*
+/* HOME
 --------------------------------------------------------------------
----- HOME CAROUSEL CAPTION
+---- CAROUSEL CAPTION
 --------------------------------------------------------------------
 */
 
@@ -124,6 +135,12 @@ body, html, .div-ppal {
 	color: #8BD6FF;
 	margin-bottom: 3%;
 }
+
+/* HOME
+--------------------------------------------------------------------
+---- CAROUSEL BOTONES
+--------------------------------------------------------------------
+*/
 
 .btn-idx {
 	padding: 0.4em 1.2em;
@@ -155,9 +172,9 @@ body, html, .div-ppal {
 	color: #000;
 }
 
-/*
+/* HOME
 --------------------------------------------------------------------
----- HOME CAROUSEL CONTROL
+---- CAROUSEL CONTROL
 --------------------------------------------------------------------
 */
 
@@ -181,46 +198,58 @@ body, html, .div-ppal {
 .carousel-control:hover /*,
 .carousel-control:focus */ {
     text-shadow: 6px 0px 2px #FF0, -6px 0px 2px #FFFF33;
-	color: #fff;
+	color: #333;
+ 	text-decoration: none;
+ 	opacity: .9;
+ }
+ 
+.carousel-control:focus {
+	color: #333;
  	text-decoration: none;
  	opacity: .9;
  }
  
 .carousel-control .icon-next, .carousel-control .glyphicon-chevron-right, .carousel-control .glyphicon-hand-right  {
 	position: absolute;
-    top: 40%;
-    right: 20%;
+    top: 32%;
+    right: 3%;
 }
 .carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-hand-left  {
 	position: absolute;
-    top: 40%;
-    left: 30%;
+    top: 32%;
+    left: 3%;
 }
 
-/*
+/* HOME
 --------------------------------------------------------------------
----- HOME CAROUSEL INDICATORS
+---- CAROUSEL INDICATORS
 --------------------------------------------------------------------
 */
 
 .carousel-indicators li {
 	background-color: rgba(0, 0, 0, 0);
 	border: 2px solid #bbb;
-	border-radius: 80% 25%;
-	width: 20px;
+	border-radius: 25%;
+	width: 1.9em;
+	height: 1.2em;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 .carousel-indicators .active {
 	background-color: #bbb;
-	width: 20px;
+	width: 1.9em;
+	height: 1.2em;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .carousel-indicators {
 	bottom: 5%;
 }
 
-/*
+/* HOME - VENTAS y COSTOS
 --------------------------------------------------------------------
----- VENTAS CAROUSEL
+---- CAROUSEL
 --------------------------------------------------------------------
 */
 
@@ -230,12 +259,12 @@ body, html, .div-ppal {
 	overflow: hidden;
 	left: 15%;
 	right: 15%;
-	border-radius: 20% 0%;
+	border-radius: 0% 20%;
 }
 
-/*
+/* HOME - VENTAS
 --------------------------------------------------------------------
----- VENTAS CAROUSEL IMAGENES
+---- CAROUSEL IMAGENES
 --------------------------------------------------------------------
 */
 
@@ -257,20 +286,20 @@ body, html, .div-ppal {
 	width: 99%;
 }
 
-/*
+/* HOME - VENTAS y COSTOS
 --------------------------------------------------------------------
----- VENTAS CAROUSEL CAPTION
+---- CAROUSEL CAPTION
 --------------------------------------------------------------------
 */
 
-.carousel-caption2 {
+.carousel-caption2, .carousel-caption3 {
 	position: absolute;
-	background-color: #ddd;
+	background-color: transparent;
 	right: 0;
 	left: 0;
 	bottom: 0%;
-	opacity: .6;
-	height: 48%;
+/*	opacity: .3; */
+	height: 55%;
 	color: #555;
 	margin-top: 0;
 	padding: 0;
@@ -290,17 +319,30 @@ body, html, .div-ppal {
 }
 
 .carousel-caption2 p {
-    font-size: 1.8em;
+    font-size: 1.6em;
     padding-left: 1%;
     padding-right: 1%;
+	color: #222;
+	background-color: #fff;
+	opacity: .7;
 }
+
+.carousel-caption2 p span {
+	color: #fff;
+}
+
+/* HOME - VENTAS y COSTOS
+--------------------------------------------------------------------
+---- CAROUSEL BUTTONS
+--------------------------------------------------------------------
+*/
 
 .btn-idx2 {
 	padding: 0.4em 1.2em;
 	width: 50%;
 	position: absolute;
-	left: 25%;
-	bottom: 12%;
+	right: 2%;
+	bottom: 8%;
 	z-index: 10;
 }
 
@@ -316,9 +358,9 @@ body, html, .div-ppal {
 	color: #000;
 }
 
-/*
+/* HOME - VENTAS y COSTOS
 --------------------------------------------------------------------
----- VENTAS CAROUSEL CONTROL
+---- CAROUSEL CONTROL
 --------------------------------------------------------------------
 */
 
@@ -331,12 +373,21 @@ body, html, .div-ppal {
 .carousel-control:focus */ {
 	color: #777;
  }
- 
 
-
-/*
+/* HOME - VENTAS y COSTOS
 --------------------------------------------------------------------
----- COSTOS CAROUSEL IMAGENES
+---- CAROUSEL INDICATORS
+--------------------------------------------------------------------
+*/
+
+.carousel-indicators2 {
+	left: 30%;
+}
+
+
+/* HOME - COSTOS
+--------------------------------------------------------------------
+---- CAROUSEL IMAGENES
 --------------------------------------------------------------------
 */
 
@@ -359,17 +410,11 @@ body, html, .div-ppal {
 }
 
 
-
-
-
-
-
 /*
 --------------------------------------------------------------------
 ---- MEDIA QUERIES 
 ----
 ----    >>> PORTRAIT GENERAL <<<
-----
 ----
 --------------------------------------------------------------------
 */
@@ -401,254 +446,8 @@ body, html, .div-ppal {
 	    font-size: 0.7em;
 	}
 
-}
-
-/*
---------------------------------------------------------------------
----- MEDIA QUERIES 
-----
-----    >>> PORTRAIT y HEIGHT <<<
-----
-----    CAROUSEL (BOTTOM y HEIGHT)
---------------------------------------------------------------------
-*/
-
-@media (min-height: 400px) and (orientation:portrait) {
-	.carousel-ppal {
-		bottom: 9%;
-		height: 54%;
-	}
-}
-
-@media (min-height: 500px) and (orientation:portrait) {
-	.carousel-ppal {
-		bottom: 10%;
-		height: 50%;
-	}
-}
-
-@media (min-height: 600px) and (orientation:portrait) {
-	.carousel-ppal {
-		bottom: 10%;
-		height: 50%;
-	}
-}
-
-@media (min-height: 700px) and (orientation:portrait) {
-	.carousel-ppal {
-		bottom: 18%;
-		height: 41%;
-	}
-}
-
-@media (min-height: 850px) and (orientation:portrait) {
-	.carousel-ppal {
-		bottom: 11%;
-		height: 47%;
-	}
-}
-
-/*
---------------------------------------------------------------------
----- MEDIA QUERIES 
-----
-----    >>> PORTRAIT y WIDTH <<<
-----
-----    BODY (FONT-SIZE)
---------------------------------------------------------------------
-*/
-
-@media (min-width: 5px) and (orientation:portrait) {
-	body{
-		font-size: 4px;
-	}
-}
-
-@media (min-width: 200px) and (orientation:portrait) {
-	body{
-		font-size: 6px;
-	}
-}
-
-@media (min-width: 300px) and (orientation:portrait) {
-	body{
-		font-size: 9px;
-	}
-}
-
-@media (min-width: 350px) and (orientation:portrait) {
-	body{
-		font-size: 10px;
-	}
-}
-
-@media (min-width: 400px) and (orientation:portrait) {
-	body{
-		font-size: 11px;
-	}
-}
-
-@media (min-width: 500px) and (orientation:portrait) {
-	body{
-		font-size: 14px;
-	}
-}
-
-@media (min-width: 600px) and (orientation:portrait) {
-	body{
-		font-size: 16px;
-	}
-}
-
-@media (min-width: 700px) and (orientation:portrait) {
-	body{
-		font-size: 19px;
-	}
-}
-
-@media (min-width: 800px) and (orientation:portrait) {
-	body{
-		font-size: 22px;
-	}
-}
-
-@media (min-width: 900px) and (orientation:portrait) {
-	body{
-		font-size: 26px;
-	}
-}
-
-
-/*
---------------------------------------------------------------------
----- MEDIA QUERIES 
-----
-----    >>> LANDSCAPE y WIDTH <<<
-----
-----    BODY (FONT-SIZE)
-----    CAROUSEL (LEFT y WIDTH)
---------------------------------------------------------------------
-*/
-
-@media (min-width: 5px) and (orientation:landscape) {
-	body{
-		font-size: 3px;
-	}
-
-	.carousel-ppal {
-		left: 35%;
-		width: 65%;
-	}
-
-	.navbar {
-	    font-size: 0.9em;
-	}
-
-}
-
-@media (min-width: 230px) and (orientation:landscape) {
-	body{
-		font-size: 4px;
-	}
-}
-
-@media (min-width: 270px) and (orientation:landscape) {
-	body{
-		font-size: 5px;
-	}
-}
-
-@media (min-width: 300px) and (orientation:landscape) {
-	body{
-		font-size: 4px;
-	}
-
-	.carousel-ppal {
-		left: 39%;
-		width: 61%;
-	}
-}
-
-@media (min-width: 360px) and (orientation:landscape) {
-	body{
-		font-size: 5px;
-	}
-}
-
-@media (min-width: 400px) and (orientation:landscape) {
-	body{
-		font-size: 6px;
-	}
-}
-
-@media (min-width: 470px) and (orientation:landscape) {
-	body{
-		font-size: 7px;
-	}
-}
-
-@media (min-width: 500px) and (orientation:landscape) {
-	body{
-		font-size: 7.7px;
-	}
-}
-
-@media (min-width: 550px) and (orientation:landscape) {
-	body{
-		font-size: 8.5px;
-	}
-}
-
-@media (min-width: 600px) and (orientation:landscape) {
-	body{
-		font-size: 9.5px;
-	}
-}
-
-@media (min-width: 700px) and (orientation:landscape) {
-	body{
-		font-size: 11.5px;
-	}
-}
-
-@media (min-width: 768px) and (orientation:landscape) {
-	body{
-		font-size: 13px;
-	}
-}
-
-@media (min-width: 850px) and (orientation:landscape) {
-	body{
-		font-size: 13.5px;
-	}
-}
-
-@media (min-width: 900px) and (orientation:landscape) {
-	body{
-		font-size: 14.5px;
-	}
-}
-
-@media (min-width: 1050px) and (orientation:landscape) {
-	body{
-		font-size: 17px;
-	}
-}
-
-@media (min-width: 1200px) and (orientation:landscape) {
-	body{
-		font-size: 19.5px;
-	}
-}
-	
-@media (min-width: 1700px) and (orientation:landscape) {
-	body{
-		font-size: 21px;
-	}
-	
-	.carousel-ppal {
-		left: 45%;
-		width: 50%;
+	.redes-soc {
+		top: 10%;
 	}
 }
 
@@ -656,46 +455,22 @@ body, html, .div-ppal {
 --------------------------------------------------------------------
 ---- MEDIA QUERIES
 ----
-----    >>> LANDSCAPE <<<
+----    >>> LANDSCAPE GENERAL <<<
 ----
-----    IMG-PPAL (MARGIN)
-----    BUTTON del MENU (MARGIN y WIDTH)
-----    IMG-BRAND (MARGIN y WIDTH)
 --------------------------------------------------------------------
 */
 
 @media (min-width: 5px) and (orientation:landscape) {
 	.img-ppal {
-		margin-top: 0%;
+		height: 100%;
 	}
 
 	.img-ppal2 {
 		visibility: hidden;
 	}
 
-}
-
-@media (min-width: 220px) and (orientation:landscape) {
-}
-
-@media (min-width: 260px) and (orientation:landscape) {
-}
-
-@media (min-width: 300px) and (orientation:landscape) {
-}
-
-@media (min-width: 350px) and (orientation:landscape) {
-}
-
-@media (min-width: 400px) and (orientation:landscape) {
-}
-
-@media (min-width: 500px) and (orientation:landscape) {
-}
-
-@media (min-width: 600px) and (orientation:landscape) {
-}
-
-@media (min-width: 700px) and (orientation:landscape) {
+	.redes-soc {
+		top: 6%;
+	}
 }
 
