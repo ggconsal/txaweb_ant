@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'principals/ventas1'
+
   resources :principals
 
   resources :canalingresos
@@ -6,6 +8,7 @@ Rails.application.routes.draw do
   resources :temas
 
   resources :areas
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -62,3 +65,41 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 end
+
+
+
+#            Prefix Verb   URI Pattern                       Controller#Action
+#principals_ventas1 GET    /principals/ventas1(.:format)     principals#ventas1
+#        principals GET    /principals(.:format)             principals#index
+#                   POST   /principals(.:format)             principals#create
+#     new_principal GET    /principals/new(.:format)         principals#new
+#    edit_principal GET    /principals/:id/edit(.:format)    principals#edit
+#         principal GET    /principals/:id(.:format)         principals#show
+#                   PATCH  /principals/:id(.:format)         principals#update
+#                   PUT    /principals/:id(.:format)         principals#update
+#                   DELETE /principals/:id(.:format)         principals#destroy
+#     canalingresos GET    /canalingresos(.:format)          canalingresos#index
+#                   POST   /canalingresos(.:format)          canalingresos#create
+#  new_canalingreso GET    /canalingresos/new(.:format)      canalingresos#new
+# edit_canalingreso GET    /canalingresos/:id/edit(.:format) canalingresos#edit
+#      canalingreso GET    /canalingresos/:id(.:format)      canalingresos#show
+#                   PATCH  /canalingresos/:id(.:format)      canalingresos#update
+#                   PUT    /canalingresos/:id(.:format)      canalingresos#update
+#                   DELETE /canalingresos/:id(.:format)      canalingresos#destroy
+#             temas GET    /temas(.:format)                  temas#index
+#                   POST   /temas(.:format)                  temas#create
+#          new_tema GET    /temas/new(.:format)              temas#new
+#         edit_tema GET    /temas/:id/edit(.:format)         temas#edit
+#              tema GET    /temas/:id(.:format)              temas#show
+#                   PATCH  /temas/:id(.:format)              temas#update
+#                   PUT    /temas/:id(.:format)              temas#update
+#                   DELETE /temas/:id(.:format)              temas#destroy
+#             areas GET    /areas(.:format)                  areas#index
+#                   POST   /areas(.:format)                  areas#create
+#          new_area GET    /areas/new(.:format)              areas#new
+#         edit_area GET    /areas/:id/edit(.:format)         areas#edit
+#              area GET    /areas/:id(.:format)              areas#show
+#                   PATCH  /areas/:id(.:format)              areas#update
+#                   PUT    /areas/:id(.:format)              areas#update
+#                   DELETE /areas/:id(.:format)              areas#destroy
+#              root GET    /                                 principals#index
