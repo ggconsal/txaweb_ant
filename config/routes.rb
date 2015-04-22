@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'principals/ventas2'
+
   get 'principals/ventas1'
 
   resources :principals
@@ -69,6 +71,7 @@ end
 
 
 #            Prefix Verb   URI Pattern                       Controller#Action
+#principals_ventas2 GET    /principals/ventas2(.:format)     principals#ventas2
 #principals_ventas1 GET    /principals/ventas1(.:format)     principals#ventas1
 #        principals GET    /principals(.:format)             principals#index
 #                   POST   /principals(.:format)             principals#create
