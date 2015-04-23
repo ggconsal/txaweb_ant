@@ -29,10 +29,12 @@ class PrincipalsController < ApplicationController
     respond_to do |format|
       if @principal.save
         format.html { redirect_to @principal, notice: 'Principal was successfully created.' }
-        format.json { render :show, status: :created, location: @principal }
+        format.json { render :ventas2, status: :created, location: @principal }
+        format.js   { render :ventas2, status: :created, location: @principal }
       else
         format.html { render :new }
         format.json { render json: @principal.errors, status: :unprocessable_entity }
+        format.js   { render json: @principal.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -69,6 +71,7 @@ class PrincipalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def principal_params
-      params.require(:principal).permit(:con_fecha, :con_nombre, :tema_id, :canalingreso_id, :con_mail, :mov_obs, :con_telefono, :con_mail_sn, :con_telefono_sn)
+      params.require(:principal).permit(:con_nombre,:con_mail, :mov_obs)
+    # params.require(:principal).permit(:con_fecha, :con_nombre, :tema_id, :canalingreso_id, :con_mail, :mov_obs, :con_telefono, :con_mail_sn, :con_telefono_sn)
     end
 end
