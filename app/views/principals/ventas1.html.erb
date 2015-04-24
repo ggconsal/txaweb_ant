@@ -1,8 +1,4 @@
-<div id="product-modal" class="modal fade">
-  <div class="modal-dialog">
-   <div id="inner-product-modal" class="modal-content"></div>
-  </div>
-</div>
+<div id="product-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
 
 <section id="about">
     <div class="container">
@@ -17,7 +13,7 @@
                     <i class="fa fa-bolt fa-2x"></i>
                     <h3>Rapida Instalacion</h3>
                     <p>Tendras tu sitio<br/>finalizado en 72hs.</p>
-                    <%= link_to "Envíenme Información", new_principal_path(@principal), remote: true, class: "btn btn-outline-inverse btn-lg btn-idx3" %>
+                    <%= link_to "Envíenme Información", new_principal_path, remote: true, class: "btn btn-outline-inverse btn-lg btn-idx3" %>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 ventas1">

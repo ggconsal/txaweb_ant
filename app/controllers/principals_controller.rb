@@ -24,19 +24,8 @@ class PrincipalsController < ApplicationController
   # POST /principals
   # POST /principals.json
   def create
-    @principal = Principal.new(principal_params)
+    @principal = Principal.create(principal_params)
 
-    respond_to do |format|
-      if @principal.save
-        format.html { redirect_to @principal, notice: 'Principal was successfully created.' }
-        format.json { render :ventas2, status: :created, location: @principal }
-        format.js   { render :ventas2, status: :created, location: @principal }
-      else
-        format.html { render :new }
-        format.json { render json: @principal.errors, status: :unprocessable_entity }
-        format.js   { render json: @principal.errors, status: :unprocessable_entity }
-      end
-    end
   end
 
   # PATCH/PUT /principals/1

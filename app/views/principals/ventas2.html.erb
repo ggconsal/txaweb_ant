@@ -1,8 +1,4 @@
-<div id="product-modal" class="modal fade">
-  <div class="modal-dialog">
-   <div id="inner-product-modal" class="modal-content"></div>
-  </div>
-</div>
+<div id="product-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
 
 <section id="about">
     <div class="container">
@@ -25,7 +21,7 @@
                     <i class="fa fa-bar-chart fa-2x"></i>
                     <h3>Contar Personas</h3>
                     <p>Mayor control de tus empleados<br/>Podrás comparar Ventas Vs. Visitas.</p>
-				    <%= link_to "Tomemos un Cafe", new_principal_path(@principal), remote: true, class: "btn btn-outline-inverse btn-lg btn-idx3" %>
+				    <%= link_to "Tomemos un Cafe", new_principal_path(@principal), remote: true,  class: "btn btn-outline-inverse btn-lg btn-idx3" %>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 ventas1">

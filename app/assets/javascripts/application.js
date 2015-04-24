@@ -13,14 +13,18 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require bootstrap
 
 //Load this when the DOM is ready
-$(function(){
+$(document).ready(function(){
   // You used .myCarousel here. 
   // That's the class selector not the id selector,
   // which is #myCarousel
 	//$('#myCarousel').carousel();
+
+	$('#gc-aceptar').click(function() {
+		$('#product-modal').close();
+	});
 
 	$('#vermas1').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -46,11 +50,6 @@ $(function(){
 		        return false;
 		    }
 		}
-	});
-
-	$('#aceptar').click(function() {
-		$('#inner-product-modal').modal('dismiss');
-		$('#product-modal').modal('dismiss');
 	});
 
 
