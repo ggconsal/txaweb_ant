@@ -6,7 +6,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h3>Déjanos tu Teléfono o Mail<br/>Para llamarte o enviarte Información</h3>
+        <h3>Dejanos tu Teléfono o Mail<br/>Para llamarlo o enviarle Información</h3>
       </div>
 
       <div class="modal-body">
@@ -15,20 +15,17 @@
 
         <div class="row">
           <div class="field col-sm-6 col-md-6">
-            <%= f.label "Nombre:" %>
-            <%= f.text_field :con_nombre, class: "form-control" %>
+            <%= f.text_field :con_nombre, :required => true, :placeholder => " Ingrese su Nombre...", :class=>"form-control" %>
           </div>
 
           <div class="field col-sm-6 col-md-6">
-            <%= f.label "Teléfono" %><br>
-            <%= f.text_field :con_telefono, class: "form-control" %>
+            <%= f.text_field :con_telefono, :required => true, :placeholder => "Ingrese su Teléfono...", :class=>"form-control" %>
           </div>
         </div>
 
         <div class="field">
-          <%= f.label "Mail" %>
-          <%= f.text_field :con_mail, class: "form-control" %>
-        </div><br/>
+          <%= f.text_field :con_mail, :required => true, :placeholder => "Ingrese su email...", :class=>"form-control" %>
+        </div>
 
       </div>
 
