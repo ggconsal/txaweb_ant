@@ -22,10 +22,6 @@ $(document).ready(function(){
   // which is #myCarousel
 	//$('#myCarousel').carousel();
 
-	$('#gc-aceptar').click(function() {
-		$('#product-modal').close();
-	});
-
 	$('#vermas1').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 		 && location.hostname == this.hostname) {

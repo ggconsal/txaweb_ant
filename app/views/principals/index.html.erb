@@ -1,3 +1,5 @@
+<div id="product-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 div-img">
   <%= image_tag "main.jpg", class: "img-responsive img-ppal"%>
   <%= image_tag "main2.jpg", class: "img-responsive img-ppal2"%>
@@ -81,7 +83,7 @@
         </div>
       </div>
       <div class="item">
-        <%= link_to 'Tomemos un Cafe', new_principal_path, :class=>"btn-idx2 btn-font1" %>
+        <%= link_to 'Tomemos un Cafe', new_principal_path, remote: true, class: "btn-idx2 btn-font1" %>
         <%= image_tag "relax-900x550.jpg", class: "img_vta3"  %>
         <div class="carousel-caption2">
           <h3>Mejore la </span>Rentabilidad</span> <br/> de su Negocio</h3>
@@ -120,7 +122,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <%= link_to 'Expliquenme mas', new_principal_path, :class=>"btn-idx2 btn-font1" %>
+        <%= link_to 'Expliquenme mas', new_principal_path, remote: true, :class=>"btn-idx2 btn-font1" %>
         <%= image_tag "costosgastos.jpg", class: "img_vta4"  %>
         <div class="carousel-caption2">
           <h3>No pierda mas dinero!</h3>
@@ -130,7 +132,7 @@
         </div>
       </div>
       <div class="item">
-        <%= link_to 'Expliquenme mas', new_principal_path, :class=>"btn-idx2 btn-font1" %>
+        <%= link_to 'Expliquenme mas', new_principal_path, remote: true, :class=>"btn-idx2 btn-font1" %>
         <%= image_tag "reporte889x571.png", class: "img_vta5"  %>
         <div class="carousel-caption2">
           <h3>Simplifique los<br/>Números de su Negocio</h3>
@@ -139,7 +141,7 @@
         </div>
       </div>
       <div class="item">
-        <%= link_to 'Tomemos un Cafe', new_principal_path, :class=>"btn-idx2 btn-font1" %>
+        <%= link_to 'Tomemos un Cafe', new_principal_path, remote: true, class: "btn-idx2 btn-font1" %>
         <%= image_tag "relax-900x550.jpg", class: "img_vta6"  %>
         <div class="carousel-caption2">
           <h3>Mejore la </span>Rentabilidad</span> <br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;de su Negocio</h3>

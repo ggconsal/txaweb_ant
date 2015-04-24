@@ -15,6 +15,8 @@ class PrincipalsController < ApplicationController
   # GET /principals/new
   def new
     @principal = Principal.new
+    mov_obs = params[:foo_param]
+    #@principal = Principal.new
   end
 
   # GET /principals/1/edit
@@ -24,6 +26,7 @@ class PrincipalsController < ApplicationController
   # POST /principals
   # POST /principals.json
   def create
+    #mov_obs = params[:foo_param]
     @principal = Principal.create(principal_params)
 
   end
@@ -60,7 +63,7 @@ class PrincipalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def principal_params
-      params.require(:principal).permit(:con_nombre,:con_mail, :mov_obs)
+      params.require(:principal).permit(:con_nombre, :con_mail, :con_telefono, :mov_obs)
     # params.require(:principal).permit(:con_fecha, :con_nombre, :tema_id, :canalingreso_id, :con_mail, :mov_obs, :con_telefono, :con_mail_sn, :con_telefono_sn)
     end
 end

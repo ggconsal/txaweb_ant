@@ -1,7 +1,8 @@
 $("#product-modal").html("<%= escape_javascript(render 'new') %>");
-
+$("#product-modal").modal("show");
 $('#product-modal').on('shown.bs.modal', function () {
-	$('.first_input').focus()
+	$('#principal_con_nombre').focus()
 });
 
-$("#product-modal").modal("show");
+
+
