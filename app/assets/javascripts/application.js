@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require jasny-bootstrap
 
 //Load this when the DOM is ready
 $(document).ready(function(){
@@ -35,7 +36,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$('#vermas2').click(function() {
+	$('.mov-suave').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 		 && location.hostname == this.hostname) {
 		    var $target = $(this.hash);
@@ -47,7 +48,6 @@ $(document).ready(function(){
 		    }
 		}
 	});
-
 
 });
 

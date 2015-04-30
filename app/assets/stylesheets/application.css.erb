@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require bootstrap
+ *= require jasny-bootstrap
  *= require berry
  *= require animate
  *= require font-awesome
@@ -149,15 +150,17 @@ body, html, .div-ppal {
 
 .btn-idx {
 	padding: 0.4em 1.2em;
-	width: 50%;
+	width: 60%;
+	height: 33px;
 	position: absolute;
-	left: 25%;
+	left: 20%;
 	bottom: 20%;
+	padding: 3px 0px 3px 0px;
 }
 
 .btn-font1 {
 	font-weight: bold;
-    font-size: 1.3em;
+    font-size: 16px;
 	color: #333;
 	background-color: #E7B54E;
 	text-align: center;
@@ -449,10 +452,6 @@ body, html, .div-ppal {
 	    transform: rotate(180deg);		
 	}
 
-	.navbar {
-	    font-size: 0.7em;
-	}
-
 	.redes-soc {
 		top: 10%;
 	}
@@ -512,7 +511,7 @@ body, html, .div-ppal {
 --------------------------------------------------------------------
 */
 
-@media (min-width: 5px) and (orientation:landscape) {
+@media (orientation:landscape) {
 	.img-ppal {
 		height: 100%;
 	}
@@ -569,5 +568,72 @@ body, html, .div-ppal {
 		width: 99%;
 	}
 
+}
+
+/*
+--------------------------------------------------------------------
+---- MEDIA QUERIES
+----
+----    >>> GENERAL <<<
+----
+----    WIDTH
+----
+--------------------------------------------------------------------
+*/
+
+@media (min-width: 5px) {
+	.navbar-brand > img {
+	    display: none;
+	}
+
+	.navbar {
+	    font-size: 10px;
+	}
+}
+
+@media (min-width: 260px) {
+	.navbar-brand > img {
+		border-radius: 15%;
+		display: block;
+	    margin-left: 0%;
+	}
+
+	.navbar {
+	    font-size: 13px;
+	}
+}
+
+@media (min-width: 300px) {
+	.navbar-brand > img {
+		display: block;
+	    margin-left: 8%;
+	}
+
+	.navbar {
+	    font-size: 14px;
+	}
+}
+
+@media (min-width: 400px) {
+	.navbar-brand > img {
+	    display: block;
+	    margin-left: 18%;
+	}
+
+	.navbar {
+	    font-size: 16px;
+	}
+}
+
+@media (min-width: 900px) {
+	.navbar {
+	    font-size: 17px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.navbar {
+	    font-size: 18px;
+	}
 }
 
