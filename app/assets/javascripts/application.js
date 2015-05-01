@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
-//= require jasny-bootstrap
+
 
 //Load this when the DOM is ready
 $(document).ready(function(){
@@ -49,5 +49,9 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.dropdown-menu li a').on('click', function(){
+	    $(".dropdown-menu").click();
+	    $(".navbar-toggle").click();
+	});
 });
 
