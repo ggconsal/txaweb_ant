@@ -15,6 +15,7 @@
  *= require berry
  *= require animate
  *= require font-awesome
+ *= require main
  *= require_self
  *= require mediaq-land-width
  *= require mediaq-land-height
@@ -24,6 +25,10 @@
 
 body, html, .div-ppal {
 	height: 100%;
+}
+
+body {
+  background: url('images/page-background.png');
 }
 
 /*
@@ -67,6 +72,7 @@ body, html, .div-ppal {
 }
 
 .redes-soc {
+	padding-left: 0px;
 	position: absolute;
 	z-index: 200;
 }
@@ -427,6 +433,37 @@ body, html, .div-ppal {
 	margin-bottom: 10px;
 }
 
+/* BLOG
+--------------------------------------------------------------------
+---- DIVS
+--------------------------------------------------------------------
+*/
+
+.section-breadcrumbs {
+	padding-top: 100px;
+}
+
+.post-summary p {
+	font-size: 0.75em;
+}
+
+.post-title h3 {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.post-image {
+	height: 300px;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 4%;
+	border-radius: 4%;
+}
+
+.post-info {
+	margin-left: 6%;
+	margin-top: 5%;
+}
 
 /*
 --------------------------------------------------------------------

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'principals/blog'
+
+  get 'principals/post'
+
   get 'principals/ventas2'
 
   get 'principals/ventas1'
