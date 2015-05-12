@@ -416,16 +416,25 @@ body, html, .div-ppal {
 	color: #C9A439;
 	border-radius: 0.2em;
 	background-color: transparent;
+	font-weight: bold;
 }
-
 
 .btn-idx3:hover {
 	background-color: #C9A439;
 	color: #fff;
 }
 
-.modal-header h3 {
+.modal-header h3, .modal-header-h4 {
 	text-align: center;
+	margin: 0px;
+}
+
+.modal-footer {
+    text-align: left;
+}
+
+#gc-aceptar {
+	margin-top: 5px;
 }
 
 #principal_con_nombre, #principal_con_mail, #principal_con_telefono {
@@ -468,6 +477,10 @@ body, html, .div-ppal {
 	text-align: center;
 }
 
+.post-title h3 span {
+    text-shadow: 6px 0px 6px #FF0, -6px 0px 6px #FFFF33;
+}
+
 .post-image {
 	height: auto;
 	width: 90%;
@@ -478,7 +491,7 @@ body, html, .div-ppal {
 
 .post-info {
 	margin-left: 6%;
-	margin-top: 5%;
+	margin-top: 20%;
 }
 
 /*
@@ -653,15 +666,59 @@ body, html, .div-ppal {
 	}
 }
 
+@media (min-width: 650px) {
+	.post-image {
+	    max-height: 150px;
+	}
+}
+
+@media (min-width: 800px) {
+	.post-image {
+	    max-height: 190px;
+	}
+}
+
 @media (min-width: 900px) {
+	.post-image {
+	    max-height: 220px;
+	}
+
 	.navbar {
 	    font-size: 17px;
 	}
 }
 
 @media (min-width: 1000px) {
+	.post-image {
+	    max-height: 260px;
+	}
+
 	.navbar {
 	    font-size: 18px;
+	}
+}
+
+@media (min-width: 1100px) {
+	.post-image {
+	    max-height: 280px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.post-image {
+	    max-height: 320px;
+	}
+}
+
+@media (min-width: 1500px) {
+	.post-image {
+	    max-height: 400px;
+	}
+}
+
+@media (min-width: 1900px) {
+	.post-image {
+	    max-height: 500px;
 	}
 }
 
