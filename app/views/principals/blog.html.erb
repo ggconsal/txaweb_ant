@@ -1,3 +1,7 @@
+<div id="product-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+<div id="div-blog" >
+
 <div class="section section-breadcrumbs">
 	<div class="container">
 		<div class="row">
@@ -20,20 +24,18 @@
 							<div class="date">26 ABR, 2015</div>
 						</div>
 						<div class="post-comments-count">
-							<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>57</a>
+							<i class="glyphicon glyphicon-comment icon-white"></i>57
 						</div>
 					</div>
-					<a href="page-blog-post-right-sidebar.html">
-						<%= image_tag "trans-conf.jpg", class: "img-responsive post-image" %>
-					</a>
+			        <%= link_to image_tag("trans-conf.jpg", class: "img-responsive post-image"), new_principal_path, remote: true %>
 					<div class="post-title">
-						<h3><a href="page-blog-post-right-sidebar.html">Ventas: Como transmitir<br/>confianza a los compradores</a></h3>
+						<h3>Ventas: Como transmitir<br/>confianza al comprador</h3>
 					</div>
 					<div class="post-summary">
 						<p>Incluimos algunas recomendaciones útiles sobre uno de los temas más importantes en el comercio electrónico: Generar en los compradores confianza sobre tu sitio, para que realicen la primera venta. A diferencia de un comercio tradicional ...</p>
 					</div>
 					<div class="post-more">
-					    <%= link_to  'Seguir Leyendo...', principals_path, :anchor => "pp", :class=>"btn btn-small" %>
+				        <%= link_to 'Seguir Leyendo...', new_principal_path, remote: true, class: "btn btn-small" %>
 					</div>
 				</div>
 			</div>
@@ -44,20 +46,18 @@
 							<div class="date">30 MAR, 2015</div>
 						</div>
 						<div class="post-comments-count">
-							<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>16</a>
+							<i class="glyphicon glyphicon-comment icon-white"></i>16
 						</div>
 					</div>
-					<a href="page-blog-post-right-sidebar.html">
-						<%= image_tag "images2.png", class: "img-responsive post-image" %>
-					</a>
+			        <%= link_to image_tag("images2.png", class: "img-responsive post-image"), new_principal_path, remote: true %>
 					<div class="post-title">
-						<h3><a href="page-blog-post-right-sidebar.html">Imágenes: Como prepararlas<br/>para la Web</a></h3>
+						<h3>Imágenes: Como<br/>prepararlas para la Web</h3>
 					</div>
 					<div class="post-summary">
 						<p>El objetivo de mejorar las imágenes, no sólo es para que el sitio sea más ágil (cargue más rápido), sino que visualmente se vea ordenado y prolijo. Te mostramos herramientas y tecnicas para aprovechar al maximo ...</p>
 					</div>
 					<div class="post-more">
-				        <%= link_to  'Seguir Leyendo...', principals_path, :class=>"btn btn-small" %>
+				        <%= link_to 'Seguir Leyendo...', new_principal_path, remote: true, class: "btn btn-small" %>
 					</div>
 				</div>
 			</div>
@@ -70,20 +70,18 @@
 							<div class="date">25 FEB, 2015</div>
 						</div>
 						<div class="post-comments-count">
-							<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>57</a>
+							<i class="glyphicon glyphicon-comment icon-white"></i>57
 						</div>
 					</div>
-					<a href="page-blog-post-right-sidebar.html">
-						<%= image_tag "desc-prod.jpg", class: "img-responsive post-image" %>
-					</a>
+			        <%= link_to image_tag("desc-prod.jpg", class: "img-responsive post-image"), new_principal_path, remote: true %>
 					<div class="post-title">
-						<h3><a href="page-blog-post-right-sidebar.html">Productos: Como Mejorar<br/>su Descripcion</a></h3>
+						<h3>Productos: Como Mejorar<br/>su Descripcion</h3>
 					</div>
 					<div class="post-summary">
 						<p>En un sitio Web (o tienda online), donde no tenemos contacto directo con nuestros clientes, tenemos que pensar muy bien en la descripción de nuestros productos. Dichas Descripciones tienen que tener en cuenta ...</p>
 					</div>
 					<div class="post-more">
-				        <%= link_to  'Seguir Leyendo...', principals_path, :class=>"btn btn-small" %>
+				        <%= link_to 'Seguir Leyendo...', new_principal_path, remote: true, class: "btn btn-small" %>
 					</div>
 				</div>
 			</div>
@@ -94,20 +92,18 @@
 							<div class="date">30 JAN, 2015</div>
 						</div>
 						<div class="post-comments-count">
-							<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>11</a>
+							<i class="glyphicon glyphicon-comment icon-white"></i>11
 						</div>
 					</div>
-					<a href="page-blog-post-right-sidebar.html">
-						<%= image_tag "indicad.jpg", class: "img-responsive post-image" %>
-					</a>
+			        <%= link_to image_tag("indicad.jpg", class: "img-responsive post-image"), new_principal_path, remote: true %>
 					<div class="post-title">
-						<h3><a href="page-blog-post-right-sidebar.html">Desempeño: 3 indicadores<br/>para medirlo</a></h3>
+						<h3>Desempeño: 3 indicadores<br/>para medirlo</h3>
 					</div>
 					<div class="post-summary">
 						<p>Los Indicadores de Gestión (del Inglés KPI - Key Performance Indicators) pueden ayudarnos a detectar que aspectos necesitamos mejorar y cuáles son los principales logros de nuestro negocio. Lo principal es que ...</p>
 					</div>
 					<div class="post-more">
-				        <%= link_to  'Seguir Leyendo...', principals_path, :class=>"btn btn-small" %>
+				        <%= link_to 'Seguir Leyendo...', new_principal_path, remote: true, class: "btn btn-small" %>
 					</div>
 				</div>
 			</div>
@@ -120,20 +116,18 @@
 							<div class="date">21 DIC, 2014</div>
 						</div>
 						<div class="post-comments-count">
-							<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>16</a>
+							<i class="glyphicon glyphicon-comment icon-white"></i>16
 						</div>
 					</div>
-					<a href="page-blog-post-right-sidebar.html">
-						<%= image_tag "promociones.jpg", class: "img-responsive post-image" %>
-					</a>
+			        <%= link_to image_tag("promociones.jpg", class: "img-responsive post-image"), new_principal_path, remote: true %>
 					<div class="post-title">
-						<h3><a href="page-blog-post-right-sidebar.html">Promociones: como<br/>aprovecharlas al maximo</a></h3>
+						<h3>Promociones: como<br/>aprovecharlas al maximo</h3>
 					</div>
 					<div class="post-summary">
 						<p>Una práctica muy común para brindar beneficios a sus clientes es generar promociones y descuentos, para aumentar las ventas y fidelizar a los compradores. Te mostramos varias herramientas para generar acciones y muchas más ...</p>
 					</div>
 					<div class="post-more">
-				        <%= link_to  'Seguir Leyendo...', principals_path, :class=>"btn btn-small" %>
+				        <%= link_to 'Seguir Leyendo...', new_principal_path, remote: true, class: "btn btn-small" %>
 					</div>
 				</div>
 			</div>
@@ -145,25 +139,23 @@
 							<div class="date">29 NOV, 2014</div>
 						</div>
 						<div class="post-comments-count">
-							<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>11</a>
+							<i class="glyphicon glyphicon-comment icon-white"></i>11
 						</div>
 					</div>
 					<!-- End Post Info -->
 					<!-- Post Image -->
-					<a href="page-blog-post-right-sidebar.html">
-						<%= image_tag "ventas02.jpg", class: "img-responsive post-image" %>
-					</a>
+			        <%= link_to image_tag("ventas02.jpg", class: "img-responsive post-image"), new_principal_path, remote: true %>
 					<!-- End Post Image -->
 					<!-- Post Title & Summary -->
 					<div class="post-title">
-						<h3><a href="page-blog-post-right-sidebar.html">Ventas: Como Vender mas<br/>en las Fiestas</a></h3>
+						<h3>Ventas: Como Vender mas<br/>en las Fiestas</h3>
 					</div>
 					<div class="post-summary">
 						<p>Nos encontramos con vendedores que nos preguntan, “¿Cómo aprovecho esta época del año para aumentar mis ventas?”.  Navidad, Año Nuevo, Dia de la Madre, del niño, Reyes; las Fiestas son oportunidades especiales ...</p>
 					</div>
 					<!-- End Post Title & Summary -->
 					<div class="post-more">
-				        <%= link_to  'Seguir Leyendo...', principals_path, :class=>"btn btn-small" %>
+				        <%= link_to 'Seguir Leyendo...', new_principal_path, remote: true, class: "btn btn-small" %>
 					</div>
 				</div>
 			</div>
@@ -172,6 +164,7 @@
 	</div>
 </div>
 <!-- End Posts List -->
+</div>
 
 <!-- Footer -->
 <!--
