@@ -15,7 +15,7 @@ class PrincipalsController < ApplicationController
   # GET /principals/new
   def new
     @principal = Principal.new
-    mov_obs = params[:foo_param]
+    @principal.mov_obs = params[:motivo]
     #@principal = Principal.new
   end
 

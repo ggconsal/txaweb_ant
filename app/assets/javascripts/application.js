@@ -49,6 +49,10 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.js-info').click(function() {
+		$("#principal_con_nombre").val("info");
+	});
+
 	$('.dropdown-menu li a').on('click', function(){
 	    $(".dropdown-menu").click();
 	    $(".navbar-toggle").click();

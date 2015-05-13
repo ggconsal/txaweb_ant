@@ -11,6 +11,7 @@ class CreatePrincipals < ActiveRecord::Migration
       t.boolean :con_mail_sn
       t.boolean :con_telefono_sn
 
+
       t.timestamps null: false
     end
     add_foreign_key :principals, :temas
