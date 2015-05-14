@@ -11,10 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap
-
+//= require turbolinks
+//= require_self
 
 //Load this when the DOM is ready
 $(document).ready(function(){
@@ -49,6 +50,17 @@ $(document).ready(function(){
 		}
 	});
 
+	$(".blog-posts-wrapper").show(function() {
+		$('.mas-consejos').hide();
+	});
+
+	$('.boton-mas').click(function() {
+		$('.mas-consejos').show();
+		$('html, body').animate({
+		   scrollTop: $(document).height()
+		}, 1500);
+	});
+
 	$('.js-info').click(function() {
 		$("#principal_con_nombre").val("info");
 	});
@@ -59,3 +71,14 @@ $(document).ready(function(){
 	});
 });
 
+
+
+/*		$('.div-boton').hide();
+		$('.boton-mas').addClass("hide"); 
+		$('.div-boton').removeClass( "myClass noClass" )
+
+        $('html, body').animate({
+           scrollTop: '0px'
+        },
+        1500); 
+*/
