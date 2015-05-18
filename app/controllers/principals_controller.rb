@@ -26,9 +26,9 @@ class PrincipalsController < ApplicationController
   # POST /principals
   # POST /principals.json
   def create
-    #mov_obs = params[:foo_param]
     @principal = Principal.create(principal_params)
 
+    ContactMailer.contact_email(@principal).deliver
   end
 
   # PATCH/PUT /principals/1

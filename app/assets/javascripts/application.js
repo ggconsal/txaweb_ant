@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
+//= require spin
 //= require bootstrap
 //= require turbolinks
 //= require_self
@@ -69,6 +70,27 @@ $(document).ready(function(){
 	    $(".dropdown-menu").click();
 	    $(".navbar-toggle").click();
 	});
+
+
+	$(document).on('submit', 'form', function(e) {
+	    $('#gc-aceptar').hide(); 
+	    var opts = {
+	      lines: 11, // la cantidad de líneas
+	      length: 0, // el tamaño de cada línea
+	      width: 14, // el grosor de las líneas
+	      radius: 22, // el radio del círculo
+	      corner: 1,
+	      rotate: 0,
+	      trail: 67, // el efecto luminosidad
+	      speed: 1, // la velocidad
+	      shadow: false, // habilitar o deshabilitar las sombras
+	      Hwaccel: false,
+	      color: '#300000' // el color en formato RGB
+	    };
+
+	    new Spinner(opts).spin(document.getElementById('msgOK'));
+	});
+
 });
 
 
