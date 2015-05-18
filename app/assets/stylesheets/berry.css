@@ -114,7 +114,7 @@ header .navbar-default ul.navbar-nav li a.getApp {
 header .navbar-default ul.navbar-nav li a.getApp:after {
   display: none;
 }
-header .navbar-default .navbar-brand {
+header .navbar-default /*.navbar-brand*/ {
   height: auto;
   padding: 0;
 }
@@ -130,10 +130,10 @@ header .navbar-default.scrolled {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-header .navbar-default.scrolled .navbar-brand {
+header .navbar-default.scrolled /*.navbar-brand*/ {
   padding: 15px 20px;
 }
-header .navbar-default.scrolled .navbar-brand img {
+header .navbar-default.scrolled /*.navbar-brand img*/ {
   width: auto;
   max-height: 33px;
 }
