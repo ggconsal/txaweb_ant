@@ -51,15 +51,16 @@ $(document).ready(function(){
 		}
 	});
 
-	$(".blog-posts-wrapper").show(function() {
-		$('.mas-consejos').hide();
-	});
+	$('.mas-consejos').hide();
+	$('.boton-mas2').hide();
 
 	$('.boton-mas').click(function() {
 		$('.mas-consejos').show();
+		$('.boton-mas').hide();
 		$('html, body').animate({
-		   scrollTop: $(".ult-post").offset().top   //$(document).height()
+		   scrollTop: $(".mas-consejos").offset().top   //$(document).height()
 		}, 1500);
+		$('.boton-mas2').show();
 	});
 
 	$('.js-info').click(function() {
@@ -103,4 +104,5 @@ $(document).ready(function(){
            scrollTop: '0px'
         },
         1500); 
+
 */
