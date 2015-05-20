@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'principals/quienes'
+
   get 'principals/blog'
 
   get 'principals/post'
