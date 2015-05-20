@@ -58,7 +58,7 @@ $(document).ready(function(){
 	$('.boton-mas').click(function() {
 		$('.mas-consejos').show();
 		$('html, body').animate({
-		   scrollTop: $(document).height()
+		   scrollTop: $(".ult-post").offset().top   //$(document).height()
 		}, 1500);
 	});
 
