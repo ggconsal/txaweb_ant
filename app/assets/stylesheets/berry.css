@@ -554,14 +554,14 @@ section::after {
   box-shadow: none;
   padding: 5px 25px;
 }
-.btn.btn-primary {
+/*.btn.btn-primary {
   border: 2px solid #ffffff;
   background: none;
   color: #ffffff;
 }
 .btn.btn-primary:hover {
   color: #ffffff;
-}
+}*/
 .btn.btn-default {
   border: none;
   background: #ffffff;
@@ -969,7 +969,7 @@ footer .rights a {
   background-color: #CCC;
   border: 1px solid rgba(0, 0, 0, 0);
 }
-.btn.btn-primary {
+/*.btn.btn-primary {
   color: #cc6698;
   border-color: #cc6698;
 }
@@ -986,7 +986,7 @@ footer .rights a {
   color: #ffffff;
   background: #cc6698;
   border-color: #cc6698;
-}
+}*/
 .btn.btn-default {
   background: #ffffff;
   /* Old browsers */
