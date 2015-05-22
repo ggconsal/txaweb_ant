@@ -174,11 +174,6 @@ class PrincipalsController < ApplicationController
     @post_texto03g4 = params[:pst_texto03g4]
     @post_texto03g5 = params[:pst_texto03g5]
 
-    @post_subtit03a = params[:pst_subtit03a]
-    @post_subtit03s = params[:pst_subtit03s]
-    @post_subtit03b = params[:pst_subtit03b]
-    @post_texto03 = params[:pst_texto03]
-
     # cuarto subtitulo
 
     @post_subtit04a = params[:pst_subtit04a]
@@ -233,6 +228,76 @@ class PrincipalsController < ApplicationController
     @post_texto04g3 = params[:pst_texto04g3]
     @post_texto04g4 = params[:pst_texto04g4]
     @post_texto04g5 = params[:pst_texto04g5]
+
+    # quinto subtitulo
+
+    @post_subtit05a = params[:pst_subtit05a]
+    @post_subtit05s = params[:pst_subtit05s]
+    @post_subtit05b = params[:pst_subtit05b]
+
+    @post_texto05a = params[:pst_texto05a]
+    @post_texto05a1 = params[:pst_texto05a1]
+    @post_texto05a2 = params[:pst_texto05a2]
+    @post_texto05a3 = params[:pst_texto05a3]
+    @post_texto05a4 = params[:pst_texto05a4]
+    @post_texto05a5 = params[:pst_texto05a5]
+
+    @post_texto05b = params[:pst_texto05b]
+    @post_texto05b1 = params[:pst_texto05b1]
+    @post_texto05b2 = params[:pst_texto05b2]
+    @post_texto05b3 = params[:pst_texto05b3]
+    @post_texto05b4 = params[:pst_texto05b4]
+    @post_texto05b5 = params[:pst_texto05b5]
+
+    @post_texto05c = params[:pst_texto05c]
+    @post_texto05c1 = params[:pst_texto05c1]
+    @post_texto05c2 = params[:pst_texto05c2]
+    @post_texto05c3 = params[:pst_texto05c3]
+    @post_texto05c4 = params[:pst_texto05c4]
+    @post_texto05c5 = params[:pst_texto05c5]
+
+    @post_texto05d = params[:pst_texto05d]
+    @post_texto05d1 = params[:pst_texto05d1]
+    @post_texto05d2 = params[:pst_texto05d2]
+    @post_texto05d3 = params[:pst_texto05d3]
+    @post_texto05d4 = params[:pst_texto05d4]
+    @post_texto05d5 = params[:pst_texto05d5]
+
+    @post_texto05e = params[:pst_texto05e]
+    @post_texto05e1 = params[:pst_texto05e1]
+    @post_texto05e2 = params[:pst_texto05e2]
+    @post_texto05e3 = params[:pst_texto05e3]
+    @post_texto05e4 = params[:pst_texto05e4]
+    @post_texto05e5 = params[:pst_texto05e5]
+
+    @post_texto05f = params[:pst_texto05f]
+    @post_texto05f1 = params[:pst_texto05f1]
+    @post_texto05f2 = params[:pst_texto05f2]
+    @post_texto05f3 = params[:pst_texto05f3]
+    @post_texto05f4 = params[:pst_texto05f4]
+    @post_texto05f5 = params[:pst_texto05f5]
+
+    @post_texto05g = params[:pst_texto05g]
+    @post_texto05g1 = params[:pst_texto05g1]
+    @post_texto05g2 = params[:pst_texto05g2]
+    @post_texto05g3 = params[:pst_texto05g3]
+    @post_texto05g4 = params[:pst_texto05g4]
+    @post_texto05g5 = params[:pst_texto05g5]
+
+    # sexto subtitulo
+
+    @post_subtit06a = params[:pst_subtit06a]
+    @post_subtit06s = params[:pst_subtit06s]
+    @post_subtit06b = params[:pst_subtit06b]
+
+    @post_link01 = params[:pst_link01]
+    @post_link02 = params[:pst_link02]
+    @post_link03 = params[:pst_link03]
+    @post_link04 = params[:pst_link04]
+    @post_link05 = params[:pst_link05]
+    @post_link06 = params[:pst_link06]
+    @post_link07 = params[:pst_link07]
+    @post_link08 = params[:pst_link08]
 
   end
 
