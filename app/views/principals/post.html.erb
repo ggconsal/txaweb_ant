@@ -15,47 +15,43 @@
 	<!-- Posts List -->
 	<div class="section blog-posts-wrapper">
 		<div class="container">
-			<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">
+			<div class="col-lg-3 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">
 				<div class="blog-post">
 					<div class="post-title">
-						<h3>Categorias</h3>
+						<h3>Titulos</h3>
 					</div>
 					<div class="post-title">
 						<ul class="list-group categorias">
 						  <li class="list-group-item list-group-item-info">
-						    <span class="badge">02</span>
-						    Ventas
+						    <%= link_to  '¿A quién está Dirigido?', "#tit01", class: "mov-suave" %>
+						  </li>
+						  <li class="list-group-item list-group-item-info">
+						    <%= link_to  'Introducción', "#tit02", class: "mov-suave" %>
+						  </li>
+						  <li class="list-group-item list-group-item-info">
+						    <%= link_to  'El tamaño Justo', "#tit03", class: "mov-suave" %>
+						  </li>
+						  <li class="list-group-item list-group-item-info">
+						    <%= link_to  'Links', "#tit03", class: "mov-suave" %>
 						  </li>
 						  <li class="list-group-item active">
 						    <span class="badge">01</span>
-						    Imagenes
-						  </li>
-						  <li class="list-group-item list-group-item-info">
-						    <span class="badge">01</span>
-						    Productos
-						  </li>
-						  <li class="list-group-item list-group-item-info">
-						    <span class="badge">01</span>
-						    Indicadores
-						  </li>
-						  <li class="list-group-item list-group-item-info">
-						    <span class="badge">01</span>
-						    Preguntas Frecuentes
+							<%= link_to "Temas Relacionados", new_principal_path(:motivo => "Blog - Post - Imagenes"), remote: true, style: "color: white;" %>
 						  </li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<!-- Post -->
-			<div class="col-md-8 col-sm-12 col-xs-12">
+			<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
 				<div class="blog-post">
-					<%= link_to image_tag(@post_imagen01, class: "img-responsive post-image2"), new_principal_path(:motivo => "Blog - Post - transmitir"), remote: true %>
-
 					<div class="post-title">
 						<h2><%= @post_subtit01a %><span><%= @post_subtit01s %></span><%= @post_subtit01b %></h2>
 					</div>
 
-					<div class="post-summary">
+					<%= link_to image_tag(@post_imagen01, class: "img-responsive post-image2"), new_principal_path(:motivo => "Blog - Post - Imagenes"), remote: true %>
+
+					<div id="tit01" class="post-summary">
 					<!-- PRIMER subtitulo  -->
 
 						<h3><%= @post_subtit02a %><span><%= @post_subtit02s %></span><%= @post_subtit02b %></h3>
@@ -264,7 +260,7 @@
 					    </ol>
 					</div>
 
-					<div class="post-summary">
+					<div id="tit02" class="post-summary">
 					<!-- SEGUNDO subtitulo  -->
 
 						<h3><%= @post_subtit03a %><span><%= @post_subtit03s %></span><%= @post_subtit03b %></h3>
@@ -473,7 +469,7 @@
 					    </ol>
 					</div>
 
-					<div class="post-summary">
+					<div id="tit03" class="post-summary">
 					<!-- TERCER subtitulo  -->
 
 						<h3><%= @post_subtit04a %><span><%= @post_subtit04s %></span><%= @post_subtit04b %></h3>
@@ -682,7 +678,6 @@
 					    </ol>
 					</div>
 
-
 					</div>
 					<div class="post-summary"> 	
 					</div>
@@ -729,4 +724,37 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">
+				<div class="blog-post">
+					<div class="post-title">
+						<h3>Categorias</h3>
+					</div>
+					<div class="post-title">
+						<ul class="list-group categorias">
+						  <li class="list-group-item list-group-item-info">
+						    <span class="badge">02</span>
+						    Ventas
+						  </li>
+						  <li class="list-group-item active">
+						    <span class="badge">01</span>
+						    Imagenes
+						  </li>
+						  <li class="list-group-item list-group-item-info">
+						    <span class="badge">01</span>
+						    Productos
+						  </li>
+						  <li class="list-group-item list-group-item-info">
+						    <span class="badge">01</span>
+						    Indicadores
+						  </li>
+						  <li class="list-group-item list-group-item-info">
+						    <span class="badge">01</span>
+						    Preguntas Frecuentes
+						  </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
 -->
