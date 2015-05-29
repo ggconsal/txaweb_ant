@@ -64,6 +64,21 @@ class PrincipalsController < ApplicationController
     @post_subtit01s = params[:pst_subtit01s]
     @post_subtit01b = params[:pst_subtit01b]
 
+    # subtitulo 00
+
+    @post_subtit00 = params[:pst_subtit00]
+
+    @post_link00a1 = params[:pst_link00a1]
+    @post_link00a2 = params[:pst_link00a2]
+    @post_link00b1 = params[:pst_link00b1]
+    @post_link00b2 = params[:pst_link00b2]
+    @post_link00c1 = params[:pst_link00c1]
+    @post_link00c2 = params[:pst_link00c2]
+    @post_link00d1 = params[:pst_link00d1]
+    @post_link00d2 = params[:pst_link00d2]
+    @post_link00e1 = params[:pst_link00e1]
+    @post_link00e2 = params[:pst_link00e2]
+
     # primer subtitulo
 
     @post_subtit02a = params[:pst_subtit02a]
@@ -290,14 +305,35 @@ class PrincipalsController < ApplicationController
     @post_subtit06s = params[:pst_subtit06s]
     @post_subtit06b = params[:pst_subtit06b]
 
-    @post_link01 = params[:pst_link01]
-    @post_link02 = params[:pst_link02]
-    @post_link03 = params[:pst_link03]
-    @post_link04 = params[:pst_link04]
-    @post_link05 = params[:pst_link05]
-    @post_link06 = params[:pst_link06]
-    @post_link07 = params[:pst_link07]
-    @post_link08 = params[:pst_link08]
+    @post_texto06a = params[:pst_texto06a]
+    @post_texto06b = params[:pst_texto06b]
+    @post_texto06c = params[:pst_texto06c]
+    @post_texto06d = params[:pst_texto06d]
+    @post_texto06e = params[:pst_texto06e]
+    @post_texto06f = params[:pst_texto06f]
+    @post_texto06g = params[:pst_texto06g]
+    @post_texto06h = params[:pst_texto06h]
+
+    # ultimo subtitulo
+
+    @post_subtit99 = params[:pst_subtit99]
+
+    @post_link99a1 = params[:pst_link99a1]
+    @post_link99a2 = params[:pst_link99a2]
+    @post_link99b1 = params[:pst_link99b1]
+    @post_link99b2 = params[:pst_link99b2]
+    @post_link99c1 = params[:pst_link99c1]
+    @post_link99c2 = params[:pst_link99c2]
+    @post_link99d1 = params[:pst_link99d1]
+    @post_link99d2 = params[:pst_link99d2]
+    @post_link99e1 = params[:pst_link99e1]
+    @post_link99e2 = params[:pst_link99e2]
+    @post_link99f1 = params[:pst_link99f1]
+    @post_link99f2 = params[:pst_link99f2]
+    @post_link99g1 = params[:pst_link99g1]
+    @post_link99g2 = params[:pst_link99g2]
+    @post_link99h1 = params[:pst_link99h1]
+    @post_link99h2 = params[:pst_link99h2]
 
   end
 

@@ -25,13 +25,13 @@ $(document).ready(function(){
   // which is #myCarousel
 	//$('#myCarousel').carousel();
 
-	$('#vermas1').click(function() {
+	$('.mov-suave-post').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 		 && location.hostname == this.hostname) {
 		    var $target = $(this.hash);
 		    $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
 		    if ($target.length) {
-		        var targetOffset = $target.offset().top;
+		        var targetOffset = $target.offset().top - 100;
 		        $('html,body').animate({scrollTop: targetOffset}, 2000);
 		        return false;
 		    }
