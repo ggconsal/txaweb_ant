@@ -5,8 +5,8 @@
 	<div class="section section-breadcrumbs">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<h1><%= @post_titulo %></h1>
+				<div class="col-md-12 post-title0">
+					<h2><%= @post_subtit01a %><span><%= @post_subtit01s %></span><%= @post_subtit01b %></h2>
 				</div>
 			</div>
 		</div>
@@ -22,27 +22,27 @@
 					</div>
 					<div class="post-title">
 						<ul class="list-group categorias">
-						  <li class="list-group-item list-group-item-info">
-						    <%= link_to  'Introducción', "#tit01", class: "mov-suave-post" %>
+						  <li class="list-group-item active">
+						    <span class="badge"><%= @post_badge %></span>
+							<%= link_to "Temas Relacionados", "#tit00", class: "mov-suave-post", style: "color: white;" %>
 						  </li>
 						  <li class="list-group-item list-group-item-info">
-						    <%= link_to  '¿A quién está Dirigido?', "#tit02", class: "mov-suave-post" %>
+						    <%= link_to  @post_subtit02a, "#tit01", class: "mov-suave-post" %>
 						  </li>
 						  <li class="list-group-item list-group-item-info">
-						    <%= link_to  'El tamaño Adecuado', "#tit03", class: "mov-suave-post" %>
+						    <%= link_to  @post_subtit03a, "#tit02", class: "mov-suave-post" %>
 						  </li>
 						  <li class="list-group-item list-group-item-info">
-						    <%= link_to  'El peso Justo', "#tit04", class: "mov-suave-post" %>
+						    <%= link_to  @post_subtit04a, "#tit03", class: "mov-suave-post" %>
+						  </li>
+						  <li class="list-group-item list-group-item-info">
+						    <%= link_to  @post_subtit05a, "#tit04", class: "mov-suave-post" %>
 						  </li>
 						  <li class="list-group-item list-group-item-info">
 						    <%= link_to  'Conclusión Final', "#tit05", class: "mov-suave-post" %>
 						  </li>
 						  <li class="list-group-item list-group-item-info">
 						    <%= link_to  'Links', "#tit04", class: "mov-suave-post" %>
-						  </li>
-						  <li class="list-group-item active">
-						    <span class="badge">03</span>
-							<%= link_to "Temas Relacionados", "#tit00", class: "mov-suave-post", style: "color: white;" %>
 						  </li>
 						</ul>
 					</div>
@@ -51,10 +51,6 @@
 			<!-- Post -->
 			<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
 				<div class="blog-post">
-					<div class="post-title">
-						<h2><%= @post_subtit01a %><span><%= @post_subtit01s %></span><%= @post_subtit01b %></h2>
-					</div>
-
 					<%= link_to image_tag(@post_imagen01, class: "img-responsive post-image2"), new_principal_path(:motivo => "Blog - Post - Imagenes"), remote: true %>
 
 					<%= render "post_texto" %>

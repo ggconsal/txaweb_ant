@@ -59,6 +59,7 @@ class PrincipalsController < ApplicationController
 
     @post_titulo = params[:pst_titulo]
     @post_imagen01 = params[:pst_imagen01]
+    @post_badge = params[:pst_badge]
 
     @post_subtit01a = params[:pst_subtit01a]
     @post_subtit01s = params[:pst_subtit01s]

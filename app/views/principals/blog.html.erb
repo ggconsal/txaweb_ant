@@ -5,8 +5,8 @@
 	<div class="section section-breadcrumbs">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<h1>Consejos y Preguntas Frecuentes</h1>
+				<div class="col-md-12 post-title0">
+					<h2>Blog: Consejos y Preguntas Frecuentes</h2>
 				</div>
 			</div>
 		</div>
@@ -35,7 +35,7 @@
 							<p>Incluimos recomendaciones útiles sobre uno de los temas más importantes en el comercio electrónico: ¿Como Generar en los compradores confianza sobre tu sitio, para que realicen la primera venta? A diferencia de un comercio tradicional ...</p>
 						</div>
 						<div class="post-more">
-					        <%= link_to 'Seguir Leyendo...', new_principal_path(:motivo => "Blog - transmitir"), remote: true, class: "btn btn-small" %>
+							<%= render :partial => 'post01', :locals => {:btn_nombre => "Seguir Leyendo...", :lnk_style => "btn btn-small"} %>
 						</div>
 					</div>
 				</div>
@@ -57,7 +57,7 @@
 							<p>El objetivo de mejorar las imágenes, no sólo es para que el sitio sea más ágil (cargue más rápido), sino que visualmente se vea ordenado y prolijo. Te mostramos herramientas y tecnicas para aprovechar al maximo ...</p>
 						</div>
 						<div class="post-more">
-							<%= render 'post01' %>
+							<%= render :partial => 'post02', :locals => {:btn_nombre => "Seguir Leyendo...", :lnk_style => "btn btn-small"} %>
 						</div>
 					</div>
 				</div>

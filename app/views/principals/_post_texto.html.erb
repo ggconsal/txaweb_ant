@@ -3,9 +3,16 @@
 
 						<h3><%= @post_subtit00 %></h3>
 						<!-- CUARTO subtitulo >>> PRIMER texto  -->
-					    <p> <a href=<%= @post_link00a2 %> ><%= @post_link00a1 %></a> </p>
-					    <p> <a href=<%= @post_link00b2 %> ><%= @post_link00b1 %></a> </p>
-					    <p> <a href=<%= @post_link00c2 %> ><%= @post_link00c1 %></a> </p>
+						<% if @post_link00a2 != "" %>
+							<p> <%= render :partial => @post_link00a2, :locals => {:btn_nombre => @post_link00a1, :lnk_style => ""} %></p>
+						<% end %>
+						<% if @post_link00b2 != "" %>
+							<p> <%= render :partial => @post_link00b2, :locals => {:btn_nombre => @post_link00b1, :lnk_style => ""} %></p>
+						<% end %>
+						<% if @post_link00b2 != "" %>
+							<p> <%= render :partial => @post_link00c2, :locals => {:btn_nombre => @post_link00c1, :lnk_style => ""} %></p>
+						<% end %>
+
 					    <p> <a href=<%= @post_link00d2 %> ><%= @post_link00d1 %></a> </p>
 					    <p> <a href=<%= @post_link00e2 %> ><%= @post_link00e1 %></a> </p>
 					    <p> <a href=<%= @post_link00f2 %> ><%= @post_link00f1 %></a> </p>
