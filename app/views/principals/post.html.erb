@@ -15,7 +15,7 @@
 	<!-- Posts List -->
 	<div class="section blog-posts-wrapper">
 		<div class="container">
-			<div class="col-lg-3 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">
+			<div class="col-lg-3 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 sin-padd-r">
 				<div class="blog-post">
 					<div class="post-title">
 						<h3>Titulos</h3>
@@ -47,9 +47,30 @@
 						</ul>
 					</div>
 				</div>
+				<div class="blog-post">
+					<div class="post-title">
+						<h3>Nuestras Soluciones</h3>
+					</div>
+					<div class="post-title">
+						<ul class="list-group categorias">
+						  <li class="list-group-item list-group-item-info">
+				              <%= link_to "Aumente sus Ventas", {:action => "index", :controller => "principals", :anchor => "pp"}, :class=>"mov-suave" %>
+						  </li>
+						  <li class="list-group-item list-group-item-info">
+				              <%= link_to "Reduzca los Costos", {:action => "index", :controller => "principals", :anchor => "ppp"}, :class=>"mov-suave" %>
+						  </li>
+						  <li class="list-group-item list-group-item-info">
+				              <%= link_to "Unifique su Informacion de Ventas-Inventario-Gastos", {:action => "index", :controller => "principals", :anchor => "ppp"}, :class=>"mov-suave" %>
+						  </li>
+						  <li class="list-group-item active">
+					        <%= link_to 'Contactarse con Nosotros', new_principal_path(:motivo => "Blog - Tienda"), remote: true, style: "color: white;" %>
+						  </li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<!-- Post -->
-			<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+			<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 sin-padd-r">
 				<div class="blog-post">
 					<%= link_to image_tag(@post_imagen01, class: "img-responsive post-image2"), new_principal_path(:motivo => "Blog - Post - Imagenes"), remote: true %>
 
